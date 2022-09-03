@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turna.com</title>
     <link rel="icon" type="image/x-icon" href="/assets/android-chrome-512x512.png">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -34,7 +34,7 @@
          </div>
         </div>
         <div class="navbar__dropdown">
-            <p>Uçak Bilti</p>
+            <p>Uçak Bileti</p>
             <p>Otobüs Bileti</p>
             <p>Otel Rezervasyon </span></p>
             <p>Giriş Yap<span class="fa fa-sign-out"></span></p>
@@ -298,70 +298,6 @@
         </section>
     </div>
     </div>
-
-
-
-    <script>
-
-        // Navigation JS
-        function nav() {
-            const dropdwn = document.getElementsByClassName('navbar__dropdown')[0].classList.toggle('down');
-            const arrowGone = document.getElementsByClassName('arrow')[0].classList.toggle('gone');
-            if (dropdwn.contains('down')) {
-                setTimeout(function () {
-                    dropdwn.style.overflow = 'visible'
-                }, 500)
-            } else {
-                dropdwn.style.overflow = 'hidden'
-            }
-        }
-
-
-        // Modal Js
-        let modal = document.querySelector(".modal");
-let trigger = document.querySelector(".trigger");
-let closeButton = document.querySelector(".modal__close-button");
-
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
-
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
-
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-
-
-
-
-let slides = document.querySelectorAll('.slide');
-    let btns = document.querySelectorAll('.btn');
-    let currentSlide = 1;
-    let manualNav = function(manual){
-      slides.forEach((slide) => {
-        slide.classList.remove('active');
-
-        btns.forEach((btn) => {
-          btn.classList.remove('active');
-        });
-      });
-
-      slides[manual].classList.add('active');
-      btns[manual].classList.add('active');
-    }
-
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        manualNav(i);
-        currentSlide = i;
-      });
-    });
-    </script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
