@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turna.com</title>
+    <link rel="icon" type="image/x-icon" href="/assets/android-chrome-512x512.png">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+ 
+<body>
+
+    <nav class="navbar">
+        <div class="navbar__contents">
+        
+         <div class="navbar__contents--left">
+            <img src="assets/turna_com logo.png"/>
+            <div class="arrow"></div>
+            <a href="#">Uçak Bileti</a>
+            <a href="#">Otobüs Bileti</a>
+            <a href="#" class="active__link">Otel Rezervasyon</a>
+         </div>
+         <div class="navbar__contents--right">
+            <span class="nav_icon"  onclick="nav()"> <img src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png"/> </span>
+           <button><img src="assets/turkey.png"/> </button>
+           <button><img src="assets/turkish-lira.png"/></button>
+           <button class="navbar__help">Yardım</button>
+           <button>Giriş</button>
+           <button class="navbar__signIn">Üye Ol</button>
+         </div>
+        </div>
+        <div class="navbar__dropdown">
+            <p>Uçak Bilti</p>
+            <p>Otobüs Bileti</p>
+            <p>Otel Rezervasyon </span></p>
+            <p>Giriş Yap<span class="fa fa-sign-out"></span></p>
+            <p>Üye Ol <span class="fa fa-gear"></span></p>
+        </div>
+    </nav>
+
+
+    <div class="modal">
+        <div class="modal__content">
+            <span class="modal__close-button">×</span>
+            <div class="modal__slider">
+                <div class="slide active">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/a4/9b/77/legacy-hotel-at-img-academy.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="https://exp.cdn-hotels.com/hotels/23000000/22890000/22882300/22882236/31e6e20e_z.jpg?impolicy=fcrop&w=500&h=333&q=medium" alt="">    
+                </div>
+                <div class="slide">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/a4/9b/77/legacy-hotel-at-img-academy.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/a4/9b/77/legacy-hotel-at-img-academy.jpg" alt=""> 
+                </div>
+                <div class="slide">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/a4/9b/77/legacy-hotel-at-img-academy.jpg" alt="">
+                </div>
+                <div class="modal__navigation">
+                  <div class="btn active"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                </div>
+              </div>
+             
+    
+    
+              <div class="modal__box">
+                <div class="modal__box--contents"> 
+                    <h2>Standart Oda</h2>
+                    <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page,
+                        etc.)
+                        that doesn’t distract from the layout. A practice not without controversy, laying out pages with
+                        meaningless filler text can be.
+                    </p>
+                   <div class="modal__part--one">
+                    <span>Erken Rezervasyon İndirimi</span>
+                    <span>Herşey Dahil</span>
+                    <span>Ücretsiz İptal <img class="little__icon" src="assets/icons8-warning-67 (1).png"> </span>
+                   </div>
+                   
+                   <div class="modal__part--two">
+                        <ul>
+                            <li>Sauna</li>
+                            <li>Bar</li>
+                            <li>Spa Merkezi</li>
+                            <li>Tv Salonu</li>
+                        </ul>
+                        <ul>
+                            <li>Market</li>
+                            <li>Masaj</li>
+                            <li>Kapalı Restoran</li>
+                            <li>Engelli Odaları</li>
+                        </ul>
+                        <ul>
+                            <li>Hamam</li>
+                            <li>Açık Restoran</li>
+                            <li>Otelde Otopark</li>
+                            <li>Araç Kiralama</li>
+                        </ul>
+                </div>
+                    <hr>
+                    <div  class="modal__part--three">
+                        <div class="modal__footer--left"> 
+                          <div class="detail">
+                            <h1>₺ 1.500</h1>
+                          </div>
+                            <p>22 gece için toplam tutardır.</p>
+                        </div>
+                        <div class="modal__footer--right">
+                            <button>Odayı Ayır <img src="assets/icons8-right-50.png"/></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="body__container">
+        <aside class="aside__body">
+            <h3 class="aside__title">Otele Ulaşım</h3>
+            <p class="aside__descriptions">Antalya Şehir Merkezi, Sakıp Sabancı Bulvarı, Çimen Sokak, Antalya,
+                Turkey, 07050</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.1813194193555!2d30.672406115292368!3d36.886010379930944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c390344c1f1e6d%3A0xadbc12eed7aa5b79!2sRixos%20Downtown%20Antalya!5e0!3m2!1str!2str!4v1661784648081!5m2!1str!2str"
+                width="305" height="190" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button class="aside__button">Haritada Göster</button>
+        </aside>
+
+        <section class="section__body">
+            <div class="section__title">
+                <div class="section__title--left">
+                    <div class="section__title--top">
+                    <h1>Rixos Downtown Hotel (9.0)</h1>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="section__location"><img src="assets/location.png" />Antalya,Merkez</p>
+                </div>
+                <div class="section__title--right">
+                    <button class="section__button">Rezervasyon Yap</button>
+                </div>
+            </div>
+            <div class="section__slider">
+                <div class="section__img"> </div>
+                <div class="section__description">
+                    <p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page,
+                        etc.)
+                        that doesn’t distract from the layout. A practice not without controversy, laying out pages with
+                        meaningless filler text can be.
+                    </p>
+                </div>
+            </div>
+            <article class="section__box--first">
+                <div class="section__box--img">
+                </div>
+                <div class="section__box--contents">
+                    <h2>Standart Oda</h2>
+                   <div class="section__box__top">
+                    <span>Erken Rezervasyon İndirimi</span>
+                    <span>Ücretsiz İptal <img class="section__icon" src="assets/icons8-warning-67 (1).png"> </span>
+                    <span>Herşey Dahil</span> <br>
+                   </div>
+                    <div class="section__box--list">
+                        <ul>
+                            <li>  <img src="https://img.icons8.com/windows/17/000000/--checkmark-yes.png"/> <span>Banyo</span> </li>
+                            <li> <img src="https://img.icons8.com/windows/17/000000/--checkmark-yes.png"/> <span>İnternet</span> </li>
+                            <li>  <img src="https://img.icons8.com/windows/17/000000/--checkmark-yes.png"/> <span>Havlu Seti</span> </li>
+                        </ul>
+                        <div class="section__box--detail">
+                            <span class="overline__span">₺1.200</span>
+                            <h1>₺1.500</h1>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="section__box--footer">
+                        <div class="footer__left">
+                            <p>İki gece için toplam tutardır.</p>
+                            <span class="trigger"><img class="trigger__icon" src="assets/icons8-warning-67.png">DETAYLAR</span>
+                        </div>
+                        <div class="footer__right">
+                            <button>Odayı Ayır <img src="assets/icons8-right-50.png"/></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="section__box--first">
+                <div class="section__box--img2">
+                </div>
+                <div class="section__box--contents">
+                    <h2>İki Balkonlu Oda (Delux)</h2>
+                    <div class="section__box__top">
+                        <span>Erken Rezervasyon İndirimi</span>
+                        <span>Ücretsiz İptal <img class="section__icon" src="assets/icons8-warning-67 (1).png"> </span>
+                        <span>Herşey Dahil</span>
+                       </div>
+                    <div class="section__box--list">
+                        <ul>
+                            <li>  <img src="https://img.icons8.com/windows/17/000000/--checkmark-yes.png"/> <span>Banyo</span> </li>
+                            <li> <img src="https://img.icons8.com/windows/17/000000/--checkmark-yes.png"/> <span>İnternet</span> </li>
+                            <li>  <img src="https://img.icons8.com/windows/17/000000/--checkmark-yes.png"/> <span>Havlu Seti</span> </li>
+                        </ul>
+                        <div class="section__box--detail">
+                            <span class="overline__span">₺1.200</span>
+                            <h1>₺1.500</h1>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="section__box--footer">
+                        <div class="footer__left">
+                            <p>İki gece için toplam tutardır.</p>
+                            <span class="trigger"><img class="trigger__icon" src="assets/icons8-warning-67.png">DETAYLAR</span>
+                        </div>
+                        <div class="footer__right">
+                            <button>Odayı Ayır <img src="assets/icons8-right-50.png"/></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <hr>
+
+            <footer class="footer">
+                <h2>Otel Özelikleri</h2>
+                <div class="footer__container">
+                    <div class="footer__box1">
+                        <ul>
+                            <li>Sauna</li>
+                            <li>Bar</li>
+                            <li>Spa Merkezi</li>
+                            <li>Tv Salonu</li>
+                            <li>Havaalanı Servisi</li>
+                        </ul>
+                    </div>
+                    <div class="footer__box2">
+                        <ul>
+                            <li>Market</li>
+                            <li>Masaj</li>
+                            <li>Kapalı Restoran</li>
+                            <li>Engelli Odaları</li>
+                        </ul>
+                    </div>
+                    <div class="footer__box3">
+                        <ul>
+                            <li>Hamam</li>
+                            <li>Açık Restoran</li>
+                            <li>Otelde Otopark</li>
+                            <li>Araç Kiralama</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="a">
+                    <h2>Otel Koşulları</h2>
+                    <div class="footer__container">
+                        <div class="footer__box1">
+                            <ul>
+                                <li>Sauna</li>
+                                <li>Bar</li>
+                                <li>Spa Merkezi</li>
+                                <li>Tv Salonu</li>
+                                <li>Havaalanı Mekezi</li>
+
+                            </ul>
+                        </div>
+                        <div class="footer__box2">
+                            <ul>
+                                <li>Market</li>
+                                <li>Masaj</li>
+                                <li>Kapalı Restoran</li>
+                                <li>Engelli Odaları</li>
+
+                            </ul>
+                        </div>
+                        <div class="footer__box3">
+                            <ul>
+                                <li>Hamam</li>
+                            <li>Açık Restoran</li>
+                            <li>Otelde Otopark</li>
+                            <li>Araç Kiralama</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+    </div>
+
+
+
+    <script>
+
+        // Navigation JS
+        function nav() {
+            const dropdwn = document.getElementsByClassName('navbar__dropdown')[0].classList.toggle('down');
+            const arrowGone = document.getElementsByClassName('arrow')[0].classList.toggle('gone');
+            if (dropdwn.contains('down')) {
+                setTimeout(function () {
+                    dropdwn.style.overflow = 'visible'
+                }, 500)
+            } else {
+                dropdwn.style.overflow = 'hidden'
+            }
+        }
+
+
+        // Modal Js
+        let modal = document.querySelector(".modal");
+let trigger = document.querySelector(".trigger");
+let closeButton = document.querySelector(".modal__close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
+
+
+
+
+let slides = document.querySelectorAll('.slide');
+    let btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+    let manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+    </script>
+</body>
+</html>
